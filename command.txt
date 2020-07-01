@@ -1,0 +1,5 @@
+python train_ppo.py --config=pybullet_kuka_grasping --logdir=kuka_log
+
+python visualize_ppo_custom.py  --logdir=kuka_log/<timestampname> --outdir=kuka_video4
+
+tensorboard --logdir=kuka_log/
